@@ -1,8 +1,17 @@
-# Welcome to your Expo app 👋
+# Welcome to Movie List App 👋
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+This is a cross-platform mobile app built using Expo and React Native. The app fetches movie data from The Movie Database (TMDb) and uses Appwrite for backend services.
+
+![App Preview](./assets/output.gif)
+
+# About the App
 
 ## Get started
+
+- The Movie App allows users to:
+  - Browse trending and top-rated movies
+  - View movie details and trailers
+  - Search for specific titles
 
 1. Install dependencies
 
@@ -15,6 +24,20 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
    ```bash
     npx expo start
    ```
+
+3. Configuration
+   EXPO_PUBLIC_MOVIE_API_KEY=Get your API key from https://www.themoviedb.org/
+   EXPO_PUBLIC_APPWRITE_PROJECT_ID=Get your project ID from Appwrite console
+   EXPO_PUBLIC_APPWRITE_DATABASE_ID=Get your database ID from Appwrite console
+   EXPO_PUBLIC_APPWRITE_COLLECTION_ID=Get your collection ID from Appwrite console
+
+4. Tech Stack
+
+- React Native (via Expo)
+- Expo Router
+- Appwrite
+- TMDb API
+- TypeScript
 
 In the output, you'll find options to open the app in a
 
@@ -34,17 +57,3 @@ npm run reset-project
 ```
 
 This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
